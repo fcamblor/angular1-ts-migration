@@ -2,7 +2,9 @@
   "name": "angular1-ts-migration",
   "version": "0.0.0",
   "dependencies": {
-    "@types/lodash": "3.10.1"
+    "@types/angular": "1.5.8",
+    "@types/lodash": "3.10.1",
+    "@types/requirejs": "2.1.28"
   },
   "devDependencies": {
     "typescript": "^2.2.1"

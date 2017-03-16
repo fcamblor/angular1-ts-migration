@@ -2,9 +2,23 @@
 # yarn lockfile v1
 
 
+"@types/angular@1.5.8":
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.5.8.tgz#4b333912f4a1878389cce0dc9091d18c9aed61bc"
+  dependencies:
+    "@types/jquery" "1.10.*"
+
+"@types/jquery@1.10.*":
+  version "1.10.31"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-1.10.31.tgz#cebc68d369ded05344000a9b7bc62fcca7131de5"
+
 "@types/lodash@3.10.1":
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-3.10.1.tgz#ef8c8c35649f07884e0fb7763b24baaf7e175c36"
+
+"@types/requirejs@2.1.28":
+  version "2.1.28"
+  resolved "https://registry.yarnpkg.com/@types/requirejs/-/requirejs-2.1.28.tgz#bfb2c1d5a03a22ab137ff020abae9338b66efdad"
 
 typescript@^2.2.1:
   version "2.2.1"
