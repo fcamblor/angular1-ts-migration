@@ -2,16 +2,25 @@
   <head>
     <base href="/">
   </head>
-  <body ng-app="angular1-ts-migration">
+  <body>
 
     <ui-view></ui-view>
 
     <!-- Libs -->
+    <script src="lib/lodash-3.10.1.js"></script>
+    <script src="lib/requirejs-2.3.3.js"></script>
     <script src="lib/angular-1.5.8.js"></script>
     <script src="lib/angular-ui-router-1.0.0-beta.3.js"></script>
-    <script src="lib/lodash-3.10.1.js"></script>
 
     <!-- Scripts -->
     <script src="dist/ts-app.js"></script>
+    <script type="text/javascript">
+      // Defining angular module is required because angular is not defining any AMD module and angular-ui-router
+      // expect an 'angular' module to be defined when requirejs is detected on the page
+      define("angular", [], function(){ return window.angular; });
+      // Bootstrapping angular only prior to angular-ui-router has been loaded as it is a required angular module
+      // dependency in app module
+      require(['angular', 'angular-ui-router'], function(angular){ angular.bootstrap(document, ['angular1-ts-migration']); });
+    </script>
   </body>
 </html>
