@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
+    "typescript": "^2.2.1"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
+    "watch": "tsc -p app/ -w"
   }
 }
