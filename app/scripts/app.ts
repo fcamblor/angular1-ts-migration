@@ -1,4 +1,5 @@
-
+import {HelloPageComponent} from "./hello/hello-controller";
+import * as angular from "angular";
 
 angular.module('angular1-ts-migration', [
     'ui.router'
@@ -10,4 +11,4 @@ angular.module('angular1-ts-migration', [
     $stateProvider
         .state({ name: 'app', abstract: true, template: "<ui-view/>" })
         .state({ name: 'app.hello', url: '/', component: 'helloPage' });
-}]);
+}]).component('helloPage', HelloPageComponent);

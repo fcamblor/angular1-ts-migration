@@ -20,7 +20,7 @@
       define("angular", [], function(){ return window.angular; });
       // Bootstrapping angular only prior to angular-ui-router has been loaded as it is a required angular module
       // dependency in app module
-      require(['angular', 'angular-ui-router'], function(angular){ angular.bootstrap(document, ['angular1-ts-migration']); });
+      require(['angular', 'angular-ui-router', 'app'], function(angular){ angular.bootstrap(document, ['angular1-ts-migration']); });
     </script>
   </body>
 </html>
